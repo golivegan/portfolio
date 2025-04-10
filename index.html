@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clean Embed</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .iframe-wrapper {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    iframe {
+      position: absolute;
+      top: -50px; /* Moves the iframe up to hide banner */
+      left: 0;
+      width: 100vw;
+      height: calc(100vh + 50px); /* Compensate for moved frame */
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="iframe-wrapper">
+    <iframe src="https://golivegan.wixsite.com/olivergruber" title="Go Vegan – Oliver Gruber"></iframe>
+  </div>
+</body>
+</html>
